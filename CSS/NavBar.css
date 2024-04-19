@@ -1,0 +1,39 @@
+
+@media only screen and (min-width: 992px) {
+    nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+}
+@media only screen and (max-width: 992px) {
+    .subnav {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .img-nav {
+        display: none;
+    }
+    .dropdown-menu {
+        max-height: 500px; 
+        overflow-y: auto; 
+    }
+}
+
+
+.sub-menu > a {
+    padding: 10px 10px;
+}
+.sub-menu > a:hover, .title-subnav:hover {
+    text-decoration: underline;
+    color : #4b843f;
+    background-color: white;
+}
+.title-subnav {
+    color: #00558f;
+    background-color: white;
+}
+.text-dec {
+    text-decoration: none;
+}
+.text-dec:hover {
+    text-decoration: underline;
+} 

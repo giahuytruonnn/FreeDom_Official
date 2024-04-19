@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../IMAGE/logo.png">
+    <title>FreeDom Airlines</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/bootstrap-icons-1.11.3/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../CSS/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../CSS/NavBar.css">
+    <link rel="stylesheet" href="../CSS/Form.css">
+    <link rel="stylesheet" href="../CSS/styleBagInfo.css" />
+
+</head>
+<body>
+    <div class="container" style="">
+        <nav
+            class="navbar navbar-expand-lg navbar-light"
+        >
+            <div class="container mx-auto">
+                <a class="navbar-brand" href="../HTML/Home.html">
+                    <img src="../IMAGE/logo.png" alt="" width="80px">
+                </a>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <!-- NAV 1 -->
+                        <li class="nav-item dropdown mx-4 mt-3">
+                            <a
+                                class="nav-link fw-bold"
+                                href="../HTML/KhamPha.html"
+                                id="dropdownId"
+                                >Khám phá</a>
+
+                            <div class="dropdown-menu rounded-1" aria-labelledby="dropdownId">
+                                <div class="d-flex mt-3 subnav">
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="#">Điểm Đến</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+                                            <a class="dropdown-item" href="#">Hà Nội</a>
+                                            <a class="dropdown-item" href="#">Đà Nẵng</a>
+                                            <a class="dropdown-item" href="#">Nha Trang</a>
+                                            <a class="dropdown-item" href="#">Tất Cả Điểm Đến</a>
+                                        </div>
+                                    </div>
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Ưu Đãi</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Đêm Chưa Ngủ, Tranh Thủ Săn Deal</a>
+                                            <a class="dropdown-item" href="">Vé Máy Bay Tết Chỉ Từ 637K/Chiều</a>
+                                            <a class="dropdown-item" href="">Trải Nghiệm Bay Siêu Tiết Kiệm</a>
+                                            <a class="dropdown-item" href="">Rước Thẻ Quà – Nhận Mã Ưu Đãi</a>
+                                            <a class="dropdown-item" href=""> Tất Cả Ưu Đãi</a>
+                                        </div>
+                                    </div>
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Vé Máy Bay & Lịch Bay</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Vé Máy Bay Đi TP. Hồ Chí Minh</a>
+                                            <a class="dropdown-item" href="">Vé Máy Bay Đi Thanh Hóa</a>
+                                            <a class="dropdown-item" href="">Vé Máy Bay Từ Hà Nội</a>
+                                            <a class="dropdown-item" href="">Vé Máy Bay Từ Hải Phòng</a>
+                                            <a class="dropdown-item" href="">Lịch Bay </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img class="img-nav me-2 pe-3 ps-3 mb-3" src="../IMAGE/planeNavbar.jpg" alt="" width="300px" style="border-radius: 15%;">
+                                    </div>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- NAV2 -->
+
+
+                        <li class="nav-item dropdown mx-4 mt-3">
+                            <a
+                            class="nav-link fw-bold"
+                                href="../HTML/DatVe.html"
+                                id="dropdownId1"
+                                
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Đặt vé</a
+                            >
+                            <div class="dropdown-menu" aria-labelledby="dropdownId1">
+                                <div class="d-flex mt-3 subnav">
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Thông Tin Đặt Vé</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Đặt Vé Trực Tuyến</a>
+                                            <a class="dropdown-item" href="">Điều Kiện Giá Vé</a>
+                                            <a class="dropdown-item" href="">Giá Vé Đặc Biệt</a>
+                                            <a class="dropdown-item" href="">Hoàn, Hủy, Đổi Vé</a>
+                                            <a class="dropdown-item" href="">Trễ Chuyến, Go-Show, Vé Giờ Chót</a>
+                                            <a class="dropdown-item" href="">Thuế, Phí Và Phụ Thu</a>
+                                            <a class="dropdown-item" href="">Phương Thức Thanh Toán</a>
+                                            <a class="dropdown-item" href="">Thông Tin Hướng Dẫn</a>                                           
+                                        </div>
+                                    </div>
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Dịch Vụ Bổ Trợ</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Chọn Chỗ Ngồi Yêu Thích</a>
+                                            <a class="dropdown-item" href="">Mua Thêm Hành Lý</a>
+                                            <a class="dropdown-item" href="">Phòng Chờ Thương Gia</a>
+                                            <a class="dropdown-item" href="">Nâng Hạng Vé Tại Sân Bay</a>
+                                            <a class="dropdown-item" href="">Đặt Trước Suất Ăn</a>
+                                            <a class="dropdown-item" href="">Bảo Hiểm Du Lịch FreedomCARE</a>
+                                            <a class="dropdown-item" href="">Quà Tặng Freedom</a>
+                                            <a class="dropdown-item" href="">Đấu Giá Nâng Hạng Ghế</a>                                            
+                                        </div>
+                                    </div>
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Trải Nghiệm Cùng Freedom</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Hành Trình Tận Tâm</a>
+                                            <a class="dropdown-item" href="">Hạng Economy</a>                                           
+                                        </div>
+                                    </div>
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Sản Phẩm Bổ Trợ</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Freedom Gift Voucher</a>
+                                            <a class="dropdown-item" href="">Voucher Vé Bay & Khách Sạn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <!-- NAV3 -->
+
+                        <li class="nav-item dropdown mx-4 mt-3">
+                            <a
+                                class="nav-link fw-bold"
+                                href="../HTML/TravelInfo.html"
+                                id="dropdownId2"
+                                
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Thông tin hành trình</a
+                            >
+                            <div class="dropdown-menu rounded-1" aria-labelledby="dropdownId2">
+                                <div class="d-flex mt-3 subnav">
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Hành Lý</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Hành Lý Xách Tay</a>
+                                            <a class="dropdown-item" href="">Hành Lý Miễn Cước</a>
+                                            <a class="dropdown-item" href="">Hành Lý Tính Cước</a>
+                                            <a class="dropdown-item" href="">Hành Lý Đặc Biệt</a>
+                                            <a class="dropdown-item" href="">Hành Lý Hạn Chế Vận Chuyển</a>
+                                            <a class="dropdown-item" href="">Vật Phẩm Nguy Hiểm</a>
+                                            <a class="dropdown-item" href="">Liên Hệ Tìm Kiếm Hành Lý</a>
+                                        </div>
+                                    </div>
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Làm Thủ Tục</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Làm Thủ Tục Trực Tuyến</a>
+                                            <a class="dropdown-item" href="">Làm Thủ Tục Tại Sân Bay</a>
+                                            <a class="dropdown-item" href="">Quầy Làm Thủ Tục Tự Động </a>                                            
+                                        </div>
+                                    </div>
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Dịch Vụ Đặc Biệt</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Dịch Vụ Cho Trẻ Em</a>
+                                            <a class="dropdown-item" href="">Trẻ Em Đi Một Mình</a>
+                                            <a class="dropdown-item" href="">Phụ Nữ Mang Thai</a>
+                                            <a class="dropdown-item" href="">Hỗ Trợ Người Khuyết Tật</a>
+                                            <a class="dropdown-item" href="">Khách Dị Ứng Thực Phẩm</a>
+                                            <a class="dropdown-item" href="">Suất Ăn Đặc Biệt</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Yêu Cầu Giấy Tờ</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Yêu Cầu Xác Nhận Sức Khoẻ</a>
+                                            <a class="dropdown-item" href="">Giấy Tờ Tùy Thân & Thị Thực</a>    
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- NAV4 -->
+
+
+                            <li class="nav-item dropdown mx-4 mt-3">
+                            <a
+                                class="nav-link fw-bold"
+                                href="../HTML/FAClub.html"
+                                id="dropdownId3"
+                                
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Freedom Club</a
+                            >
+                            <div class="dropdown-menu rounded-1" aria-labelledby="dropdownId3">
+                                <div class="d-flex mt-3 subnav">
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Tích Lũy Điểm</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Freedom Airlines</a>
+                                            <a class="dropdown-item" href="">Trên Đối Tác Hàng Không</a>
+                                            <a class="dropdown-item" href="">Trên Đối Tác Khác</a>
+                                            <a class="dropdown-item" href="">Yêu Cầu Cộng Điểm</a>
+                                            <a class="dropdown-item" href="">Tiêu & Tích</a>                                            
+                                        </div>
+                                    </div>
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Sử Dụng Điểm</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Trên Freedom Airlines</a>
+                                            <a class="dropdown-item" href="">Trên Đối Tác Khác</a>
+                                            <a class="dropdown-item" href="">Freedom Shop</a>
+                                            <a class="dropdown-item" href="">Quyên Góp Điểm</a>                                                
+                                        </div>
+                                    </div>
+                                    <div class="me-2 pe-3 ps-3 mb-3">
+                                        <a class="fw-bold dropdown-item title-subnav" href="">Mua & Tặng Điểm</a>
+                                        <hr class="dropdown-divider">
+                                        <div class="sub-menu">
+                                            <a class="dropdown-item" href="">Mua Điểm Xét Hạng</a>
+                                            <a class="dropdown-item" href="">Mua Điểm Thưởng</a>
+                                            <a class="dropdown-item" href="">Mua Chuyến Bay Xét Hạng</a>
+                                            <a class="dropdown-item" href="">Chuyển Nhượng Điểm</a>
+                                            <a class="dropdown-item" href="">Mua Số Đẹp</a>                                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                            </li>
+                    </ul>
+                    <div class="d-flex my-2 my-lg-0">
+                        <div class="container">
+                            <div class="d-fl">
+                                <a class=" mx-3 text-dark text-dec" href="" style="border-right:1px solid;padding-right: 10px;"><i class="ti-search pe-2"></i>TRỢ GIÚP</a>
+                                <a class="text-decoration-none text-dark" href=""><img class="me-2" src="../IMAGE/vietnam.png" width="16"  alt="">Việt Nam &bull; Tiếng Việt</a>
+                            </div>
+                            <div class="d-flex ms-5 mt-1">   
+                                <a class="ms-5 me-2  pe-2 text-dec" style="color: #00558f; border-right: 1px solid;" href="../HTML/DangNhap.html">Đăng nhập</a>
+                                <a class="text-decoration-none" style="color:#327c23 ;" href="../HTML/DangKi.html">Đăng ký</a>
+                                <img class="mt-1 ms-2" src="../IMAGE/Unlogin_Avatar.png" width="20" height="20" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+    <div id="background">
+
+    </div>
+
+
+
+
+    <div id="container">
+        <div id="content">
+          <section>
+              <h1>Hành Lý Miễn Cước</h1>
+              <aside>
+                <p>
+                  <i>Hành lý miễn cước </i>là trọng lượng hành lý mà hành khách được quyền mang theo và không phải trả phí. Trọng lượng hành lý miễn cước cho từng hạng vé của Bamboo Airways được quy định như sau:
+                </p>
+                <ul>
+                  <li>Mỗi kiện hành lý ký gửi có trọng lượng tối đa là 32kg (70lb) và/hoặc tổng kích thước ba chiều tối đa (dài + rộng + cao) không được vượt quá 203 cm. Nếu mỗi kiện hành lý vượt quá tiêu chuẩn nêu trên (về trọng lượng hoặc tổng kích thước 3 chiều), hành khách sẽ được yêu cầu đóng gói lại hành lý hoặc được yêu cầu gửi theo đường hàng hóa. </li>
+                  <li>Mỗi hành khách trên một chuyến bay được ký gửi hành lý miễn cước không quá 03 kiện đối với hạng vé Business và 02 kiện đối với hạng vé Economy, được đóng theo đúng quy cách với tổng trọng lượng không vượt quá tiêu chuẩn hành lý của hạng vé hành khách đã mua.</li>
+                  <li>Trường hợp phần trọng lượng hoặc số kiện hành lý vượt quá quy định, hành khách phải thực hiện việc đóng lại hành lý. Bamboo Airways chỉ chấp nhận vận chuyển khi hành lý ký gửi đã được đóng đúng quy định </li>
+                </ul>
+              </aside>
+              <img src="../IMAGE/BagFree.png" alt="">
+              <aside>
+                <p>
+                  <b>Đối với hành trình nội địa Việt Nam </b>(ngoại trừ Côn Đảo): Ngoài hành lý ký gửi miễn cước cho từng hạng vé theo quy định (ngoại trừ Economy Saver Max), hành khách được ký gửi miễn phí 01 bộ dụng cụ chơi gôn hoặc 01 kiện hành lý là xe đạp có tổng trọng lượng không vượt quá 23 kg. 
+                </p>
+                <ul>
+                  <li>Quy định 01 bộ dụng cụ chơi gôn tối đa bao gồm 14 gậy đánh gôn, 12 quả bóng gôn, 01 đôi giầy chơi gôn, các chữ T làm điểm phát bóng gôn. Các vật dụng khác ngoài những vật dụng trên không được tính vào bộ dụng cụ chơi gôn.</li>
+                  <li>Xe đạp được vận chuyển miễn phí là các loại xe đạp thông thường, xe thể thao. Không áp dụng xe điện, xe gắn ắc quy, xe chứa pin có thể gây nguy hiểm</li>
+                </ul>
+              </aside>
+              <aside>
+                <p>
+                  <b>Đối với hành trình quốc tế </b>(bao gồm cả nối chuyến nội địa quốc tế), hành lý ký gửi miễn cước cho em bé dưới 2 tuổi (từ 14 ngày tuổi sau khi sinh):
+                </p>
+                <ul>
+                  <li>Số lượng: 1 kiện - 10kg cho tất cả các hạng giá vé</li>
+                  <li>Kích thước và trọng lượng: tương tự như quy định hành lý của hành khách người lớn đi cùng</li>
+                  <li>Nếu vượt quá số lượng hành lý miễn cước được đề cập ở trên, phí hành lý quá cước sẽ áp dụng như quy định đối với hành khách người lớn đi cùng.</li>
+                </ul>
+              </aside>
+              <aside>
+                <p>
+                  <i>Để đảm bảo an ninh hành lý ký gửi của chính mình, hành khách vui lòng thực hiện đúng quy định về đóng gói hành lý ký gửi như sau: </i>
+                </p>
+                <ul>
+                  <li>Hành lý phải ở trong tình trạng nguyên vẹn, không bị hư hại, không bị biến dạng</li>
+                  <li>Bề mặt bên ngoài của hành lý phải không bị rách, bục hoặc thủng</li>
+                  <li>Hành lý không được nhồi nhét quá chật dẫn đến nguy cơ bị rách trong khi vận chuyển. </li>
+                  <li>Đối với hành lý có khóa kéo, các khóa phải được đóng lại, tay cầm phải được xếp gọn gàng.</li>
+                  <li>Đối với hành lý có dây, dây phải được buộc gọn gàng để giảm thiểu khả năng dây bị vướng và mắc vào băng chuyền, gây rách và hư hỏng hành lý trong quá trình vận chuyển. </li>
+                  <li>Nếu hành lý là vali, nên sử dụng dịch vụ bọc vali hoặc bọc nhựa tại sân bay để hạn chế trầy xước</li>
+                  <li>Hành lý cần được buộc thẻ tên (thẻ nhận dạng) với đầy đủ họ tên, số hiệu chuyến bay và số điện thoại của hành khách. </li>
+                </ul>
+              </aside>
+              <aside>
+                <h1>
+                  Hành Lý Miễn Cước Đối Với Đường Bay Nội Địa Việt Nam
+                </h1>
+                <div id="tableOnClick1">
+                  <button onclick="showTable('table1')">Freedom Phổ Thông</button>
+                  <button onclick="showTable('table2')">Freedom Cao Cấp</button>
+                  <button onclick="showTable('table3')">Freedom Doanh Nghiệp</button>
+                  <hr>
+                  <div id="table1" class="table-container active">
+                    <table>
+                      <tr id="tableLines1">
+                        <th></th>
+                        <th>Tiết Kiệm Tối Đa</th>
+                        <th>Tiết Kiệm</th>
+                        <th>Tiết Kiệm Thông Minh</th>
+                        <th>Tiết Kiệm Linh Hoạt</th>
+                      </tr>
+                      <tr>
+                        <td>Hành Lý Kí Gửi</td>
+                        <td>Trả Phí</td>
+                        <td colspan="3">
+                          Chặng Côn Đảo: 15 kg <br>
+                          Các chặng còn lại: 20kg
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="table2" class="table-container">
+                    <table>
+                      <tr id="tableLines2">
+                        <th></th>
+                        <th>Cao Cấp Thông Minh</th>
+                        <th>Cao Cấp Linh Hoạt</th>
+                      </tr>
+                      <tr>
+                        <td>Hành Lý Kí Gửi</td>
+                        <td colspan="2">
+                          Chặng Côn Đảo: 15 kg <br>
+                          Các chặng còn lại: 30 kg
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="table3" class="table-container">
+                    <table>
+                      <tr id="tableLines3">
+                        <th></th>
+                        <th>Doanh Nghiệp Thông Minh</th>
+                        <th>Doanh Nghiệp Linh Hoạt</th>
+                      </tr>
+                      <tr>
+                        <td>Hành Lý Kí Gửi</td>
+                        <td colspan="2">
+                          Chặng Côn Đảo: 25kg <br>
+                          Các chặng còn lại: 40 kg
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <script>
+                    function showTable(tableId) {
+                        var tableContainers = document.querySelectorAll('.table-container');
+                        tableContainers.forEach(function(container) {
+                            container.classList.remove('active');
+                        });
+                        var selectedTable = document.getElementById(tableId);
+                        if (selectedTable) {
+                            selectedTable.classList.add('active');
+                        }
+                    }
+                </script>
+                  </div>
+                  <div id="tableVSC">
+                    <p>
+                      Đối với các chuyến bay từ/đến Côn Đảo (VCS)
+                    </p>
+                    <table>
+                      <tr>
+                        <th>Hạng Giá</th>
+                        <th>Hành Lý Kí Gửi</th>
+                      </tr>
+                      <tr>
+                        <td>Freedom Doanh Nghiệp</td>
+                        <td>25kg</td>
+                      </tr>
+                      <tr>
+                        <td>Freedom Phổ Thông</td>
+                        <td>15kg</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2">*Hành lý trả trước và hành lý quá cước mua tại sân bay KHÔNG áp dụng.</td>
+                      </tr>
+                    </table>
+                  </div>
+              </aside>
+          </section>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    <footer>
+
+        <!-- computer 1 -->
+            <footer class="page-footer font-small indigo  mt-5 container" id="computer">
+                <div class="container" id="navbarSupportedContent">
+                    <div class="row">
+                        <div class="col-md-3 mx-auto">
+                            <ul class="list-unstyled sub-footer">
+                                <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Bamboo Airways</a>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Thông Tin Về Bamboo</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Thông Cáo Báo Chí</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Giải Thưởng</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Đội Bay</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Cơ Hội Nghề Nghiệp</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Dành Cho Đại Lý</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md-3 mx-auto">
+                            <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Pháp Lý</a>
+                            <ul class="list-unstyled sub-footer">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Bảo Mật Thông Tin</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Điều Lệ Vận Chuyển</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Điều Khoản Sử Dụng Website</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Điều Khoản Sử Dụng Chức Năng Đặt Vé Trực Tuyến</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Điều Khoản Sử Dụng Cookies</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md-3 mx-auto">
+                            <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Thông Tin Liên Hệ</a>
+                            <ul class="list-unstyled sub-footer">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Liên Hệ</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hóa Đơn VAT</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md-3 mx-auto">
+                            <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Trợ Giúp</a>
+                            <ul class="list-unstyled sub-footer">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Chính Sách Bảo Vệ Hành Khách</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Câu Hỏi Thường Gặp</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Trung Tâm Trợ Giúp</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <hr>
+            <!-- computer 2 -->
+    
+            <footer class="page-footer font-small indigo  mt-5 container" id="computer1">
+                <div class="container" id="navbarSupportedContent1">
+                    <div class="row">
+                        <div class="col-md mx-auto">
+                            <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Cẩm Nang Du Lịch</a>
+                            <ul class="list-unstyled sub-footer">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Du Lịch Nội Địa</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Du Lịch Quốc Tế</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Chia Sẻ (Tips Du Lịch)</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Sự Kiện</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md mx-auto">
+                            <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Hành Trình Nội Địa</a>
+                            <ul class="list-unstyled sub-footer">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội - Hồ Chí Minh</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội - Đà Nẵng</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội - Nha Trang</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội - Phú Quốc</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội - Đà Lạt</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md mx-auto">
+                            <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Chuyến Bay Nội Địa</a>
+                            <ul class="list-unstyled sub-footer">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội Đi Hồ Chí Minh</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội Đi Côn Đảo</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội Đi Đà Nẵng</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội Đi Huế</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội Đi Nha Trang</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md mx-auto">
+                            <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Điểm Đến Nội Địa</a>
+                            <ul class="list-unstyled sub-footer">
+                                <li><a class="nav-link myLink" style="color: black;" href="">TP. Hồ Chí Minh</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Hà Nội</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Côn Đảo</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Nha Trang</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Phú Quốc</a></li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md mx-auto">
+                            <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Chuyến Bay Đi Thành Phố</a>
+                            <ul class="list-unstyled sub-footer">
+                                <li><a class="nav-link myLink" style="color: black;" href="">Đi Đà Lạt</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Đi Nha Trang</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Đi Quy Nhơn</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Đi Hà Nội</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Đi TP. Hồ Chí Minh</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+            </footer>
+    
+            <!-- phone 1 -->
+        
+            <footer id="phone" class="page-footer font-small indigo mt-5 container">
+                <div class="container text-md-left" id="navbarSupportedContent2">
+                    <div class="row">
+                        <div class="col-md-3 mx-auto">
+                            <div class="d-flex justify-content-between" id="show">
+                                <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Bamboo Airways</a>
+                                <button class="font-weight-bold mt-3 mb-4  pl-3 bg-white border-0"><i class="ti-angle-down"></i></button>
+                            </div>
+                            <ul class="list-unstyled d-none" id="list">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Thông Tin Về Bamboo</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Thông Cáo Báo Chí</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Giải Thưởng</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Đội Bay</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Cơ Hội Nghề Nghiệp</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Dành Cho Đại Lý</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md-3 mx-auto">
+                            <div class="d-flex justify-content-between" id="show-1">
+                                <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Pháp Lý</a>
+                                <button class="font-weight-bold mt-3 mb-4  pl-3 bg-white border-0"><i class="ti-angle-down"></i></button>
+                            </div>
+                            <ul class="list-unstyled d-none" id="list1">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Bảo Mật Thông Tin</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Điều Lệ Vận Chuyển</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Điều Khoản Sử Dụng Website</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Điều Khoản Sử Dụng Chức Năng Đặt Vé Trực Tuyến</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Điều Khoản Sử Dụng Cookies</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md-3 mx-auto">
+                            <div class="d-flex justify-content-between" id="show-2">
+                                <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Thông Tin Liên Hệ</a>
+                                <button class="font-weight-bold mt-3 mb-4  pl-3 bg-white border-0"><i class="ti-angle-down"></i></button>
+                            </div>
+                            <ul class="list-unstyled d-none" id="list2">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Liên Hệ</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hóa Đơn VAT</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md-3 mx-auto">
+                            <div class="d-flex justify-content-between" id="show-3">
+                                <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Trợ Giúp</a>
+                                <button class="font-weight-bold mt-3 mb-4  pl-3 bg-white border-0"><i class="ti-angle-down"></i></button>
+                            </div>
+                            <ul class="list-unstyled d-none" id="list3">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Chính Sách Bảo Vệ Hành Khách</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Câu Hỏi Thường Gặp</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Trung Tâm Trợ Giúp</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    
+            <!-- phone 2 -->
+            <footer id="phone1" class="page-footer font-small indigo mt-5 container">
+                <div class="container text-md-left" id="navbarSupportedContent2">
+                    <div class="row">
+                        <div class="col-md mx-auto">
+                            <div class="d-flex justify-content-between" id="show0">
+                                <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Cẩm Nang Du Lịch</a>
+                                <button class="font-weight-bold mt-3 mb-4  pl-3 bg-white border-0"><i class="ti-angle-down"></i></button>
+                            </div>
+                            <ul class="list-unstyled d-none" id="list-0">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Du Lịch Nội Địa</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Du Lịch Quốc Tế</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Chia Sẻ (Tips Du Lịch)</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Sự Kiện</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md mx-auto">
+                            <div class="d-flex justify-content-between" id="show1">
+                                <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Hành Trình Nội Địa</a>
+                                <button class="font-weight-bold mt-3 mb-4  pl-3 bg-white border-0"><i class="ti-angle-down"></i></button>
+                            </div>
+                            <ul class="list-unstyled d-none" id="list-1">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội - Hồ Chí Minh</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội - Đà Nẵng</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội - Nha Trang</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội - Phú Quốc</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội - Đà Lạt</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md mx-auto">
+                            <div class="d-flex justify-content-between" id="show2">
+                                <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Chuyến Bay Nội Địa</a>
+                                <button class="font-weight-bold mt-3 mb-4  pl-3 bg-white border-0"><i class="ti-angle-down"></i></button>
+                            </div>
+                            <ul class="list-unstyled d-none" id="list-2">
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội Đi Hồ Chí Minh</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội Đi Côn Đảo</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội Đi Đà Nẵng</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội Đi Huế</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="nav-link myLink" style="color: black;">Hà Nội Đi Nha Trang</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md mx-auto">
+                            <div class="d-flex justify-content-between" id="show3">
+                                <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Điểm Đến Nội Địa</a>
+                                <button class="font-weight-bold mt-3 mb-4  pl-3 bg-white border-0"><i class="ti-angle-down"></i></button>
+                            </div>
+                            <ul class="list-unstyled d-none" id="list-3">
+                                <li><a class="nav-link myLink" style="color: black;" href="">TP. Hồ Chí Minh</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Hà Nội</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Côn Đảo</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Nha Trang</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Phú Quốc</a></li>
+                            </ul>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md-3 mx-auto">
+                            <div class="d-flex justify-content-between" id="show4">
+                                <a class="ms-3 mt-3 mb-4 text-decoration-none pl-3 title-footer" style="color: #00558f; font-weight: bold;" href="#">Chuyến Bay Đi Thành Phố</a>
+                                <button class="font-weight-bold mt-3 mb-4  pl-3 bg-white border-0"><i class="ti-angle-down"></i></button>
+                            </div>
+                            <ul class="list-unstyled d-none" id="list-4">
+                                <li><a class="nav-link myLink" style="color: black;" href="">Đi Đà Lạt</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Đi Nha Trang</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Đi Quy Nhơn</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Đi Hà Nội</a></li>
+                                <li><a class="nav-link myLink" style="color: black;" href="">Đi TP. Hồ Chí Minh</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                        <div class="p-3">
+                            <img class="ms-4" src="../IMAGE/worldTravelAwards.png" alt="">
+                            <img class="ms-5" src="../IMAGE/skytrax.png" width="80px" alt="">
+                            <img class="ms-5" src="../IMAGE/imagePAX.png" width="80px" alt="">
+                            <img class="ms-5" src="../IMAGE/AirlineAwards.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-0 col-sm-0 mt-4 ">
+                        <div class="row ms-3">
+                            Theo Dõi Trên Mạng Xã Hội
+                        </div>
+                        <div class="row mt-2">
+                            <a class="col-2 text-dark" href=""><i class="ti-facebook"></i></a>
+                            <a class="col-2 text-dark" href=""><i class="ti-instagram"></i></a>
+                            <a class="col-2 text-dark" href=""><i class="ti-github"></i></a>
+                            <a class="col-2 text-dark" href=""><i class="ti-youtube"></i></a>
+                            <a class="col-2 text-dark" href=""><i class="ti-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 ps-5">
+                        <div class="row">
+                            @ 2024 Freedom Airlines Copyright. All Rights Reserved. <br>
+                            Business Registration Code: 010786737
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="../IMAGE/dmca_protected_17_120.png" alt="">
+                        <img src="../IMAGE/Thong_bao_bo_cong_thuong.png" alt="">
+                    </div>
+                </div>
+            </div>
+    </footer>
+        <script src="../JS/giaHuy.js"></script>
+</body>
+</html>

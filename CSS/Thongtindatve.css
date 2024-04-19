@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  font-family: Maven Pro;
+}
+#banner {
+  background-image: url(../IMAGE/banner_datve.png);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+#navbar {
+  background-color: white;
+}
+#navbar p {
+  margin-top: 16px;
+  margin-left: 20px;
+}
+#content1 a {
+  text-decoration: none;
+}
+
+#content1 #content1a,
+#content1 #content1b,
+#content1 #content2a,
+#content1 #content2b,
+#content1 #content3a,
+#content1 #content3b {
+  position: relative;
+}
+
+#content1 #content1a > div,
+#content1 #content1b > div,
+#content1 #content2a > div,
+#content1 #content2b > div,
+#content1 #content3a > div,
+#content1 #content3b > div {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(112, 104, 104, 0.5);
+  border-bottom-left-radius: 20px;
+  color: white;
+}
+
+#content1 #content3a > a {
+  height: 400px;
+  background-image: url(../IMAGE/d3AtY29udGVudC91cGxvYWRzL3NpdGVzLzYvMjAxODExMTYxMTUwMjQvcGF5bWVudF8xNTQyMzMwNTM0LmpwZw==.webp);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 20px/ 0px 20px;
+}
+
+#content1 #content1b > a {
+  height: 400px;
+  background-image: url(../IMAGE/giavedacbiet.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 20px/ 0px 20px;
+}
+
+#content1 #content1a > a {
+  height: 400px;
+  background-image: url(../IMAGE/dieukiengiave.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 20px/ 0px 20px;
+}
+#content1 #content2b > a {
+  height: 400px;
+  background-image: url(../IMAGE/tax\ fee\ \(1\).webp);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 20px/ 0px 20px;
+}
+
+#content1 #content2a > a {
+  height: 400px;
+  background-image: url(../IMAGE/hoanhuy.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 20px/ 0px 20px;
+}
+#content1 #content3b > a {
+  height: 400px;
+  background-image: url(../IMAGE/thongtinhuongdan.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 20px/ 0px 20px;
+}
+@media only screen and (min-width: 992px) {
+  nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .subnav {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .img-nav {
+    display: none;
+  }
+  .dropdown-menu {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+}
+
+.sub-menu > a {
+  padding: 10px 10px;
+}
+.sub-menu > a:hover,
+.title-subnav:hover {
+  text-decoration: underline;
+  color: #4b843f;
+  background-color: white;
+}
+.title-subnav {
+  color: #00558f;
+  background-color: white;
+}
+.text-dec {
+  text-decoration: none;
+}
+.text-dec:hover {
+  text-decoration: underline;
+}
+#computer,
+#computer1 {
+  display: none;
+}
+
+#phone,
+#phone1 {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  #computer,
+  #computer1 {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  #phone,
+  #phone1 {
+    display: block;
+  }
+}

@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Maven Pro';
+}
+
+.background{
+    background-image: url(../IMAGE/mayBayNen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+

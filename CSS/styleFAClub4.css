@@ -1,0 +1,96 @@
+
+.container{
+  width: 100%;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+    
+  }
+  .container nav a{
+    text-decoration: none;
+    color: #053b50;
+  }
+  .container nav > a:hover{
+    text-decoration: underline;
+    color : #4b843f;
+    background-color: white;
+  }
+  .content{
+    width: 100%;
+  }
+  .custom-heading {
+    margin-left: 5%; 
+    padding-top: 10px;
+    font-weight: bold;
+    color: #053b50;
+    /* font-size: 30%; */
+    /* background-color: aqua; */
+  }
+  .custom-container {
+    width: 90%;
+    margin: auto; 
+    margin-top: 0;
+    /* background-color: black; */
+  }
+  
+#content1 #content1a,
+#content1 #content1b,
+#content1 #content2a,
+#content1 #content2b {
+  position: relative;
+}
+
+#content1 #content1a > div,
+#content1 #content1b > div,
+#content1 #content2a > div,
+#content1 #content2b > div {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(112, 104, 104, 0.5);
+  border-bottom-left-radius: 20px;
+  color: white;
+}
+
+#content1 #content1a p,
+#content1 #content1b p,
+#content1 #content2a p,
+#content1 #content2b p{
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#content1 #content1a > a {
+  height: 400px;
+  background-image: url(../IMAGE/BMoney.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 20px/ 0px 20px;
+}
+
+#content1 #content1b > a {
+  height: 400px;
+  background-image: url(../IMAGE/BGift.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 20px 0px 20px;
+}
+
+#content1 #content2a > a {
+  height: 400px;
+  background-image: url(../IMAGE/BFlight.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 20px 0px 20px;
+}
+
+#content1 #content2b > a {
+  height: 400px;
+  background-image: url(../IMAGE/BNumbers.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 20px 0px 20px;
+}
