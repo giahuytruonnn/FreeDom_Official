@@ -132,13 +132,13 @@ function showForm(formNumber) {
 }
 
 
-$(document).ready(function(){
+$(document).ready(function() {
 
 
-    
 
-    $('input[name="checkViTri"]').change(function(){
-        if($(this).val() == 'Một chiều'){
+
+    $('input[name="checkViTri"]').change(function() {
+        if ($(this).val() == 'Một chiều') {
             $('#ngay_ve').prop('disabled', true);
             $('#ngay_ve1').prop('disabled', true);
         } else {
@@ -147,7 +147,7 @@ $(document).ready(function(){
         }
     });
 
-    
+
 
 
 
@@ -157,26 +157,24 @@ $(document).ready(function(){
 
     function checkTu1() {
         var tu = $("#tu1").val();
-        if(tu == "") {
+        if (tu == "") {
             $("#errTu1").text('Không bỏ trống Từ');
             return false;
-        }
-        else {
+        } else {
             $("#errTu1").text('');
             return true;
         }
     }
-    
 
-    
+
+
 
     function checkToi1() {
         var toi = $("#toi1").val();
-        if(toi == "") {
+        if (toi == "") {
             $("#errToi1").text('Không bỏ trống Tới');
             return false;
-        }
-        else {
+        } else {
             $("#errToi1").text('');
             return true;
         }
@@ -187,19 +185,19 @@ $(document).ready(function(){
     function ngayDi1() {
         var datedi = $("#ngayDi1").val();
         var dateve = $("#ngay_ve1").val();
-        if(!datedi){
+        if (!datedi) {
             $("#errNgayDi1").text("Không rỗng");
             return false;
         }
         var di = new Date(datedi);
         var ve = new Date(dateve);
-        var now = new Date();  // Lấy ngày hiện tại
-    
+        var now = new Date(); // Lấy ngày hiện tại
+
         // Kiểm tra xem ngày đi có hợp lệ không
         if (di > ve) {
             $("#errNgayDi1").text("Ngày đi không được lớn hơn ngày về");
             return false;
-        } else if (di < now.setHours(0, 0, 0, 0)) { 
+        } else if (di < now.setHours(0, 0, 0, 0)) {
             $("#errNgayDi1").text("Ngày đi phải sau hoặc bằng ngày hiện tại");
             return false;
         } else {
@@ -212,18 +210,18 @@ $(document).ready(function(){
         var datedi = $("#ngayDi1").val();
         var dateve = $("#ngay_ve1").val();
 
-        if(!dateve){
+        if (!dateve) {
             $("#errNgayVe1").text("Không rỗng");
             return false;
         }
         var di = new Date(datedi);
         var ve = new Date(dateve);
-        var now = new Date();  
+        var now = new Date();
 
         if (di > ve) {
             $("#errNgayVe1").text("Ngày đi không được lớn hơn ngày về");
             return false;
-        } else if (ve < now.setHours(0, 0, 0, 0) || ve < di ) { 
+        } else if (ve < now.setHours(0, 0, 0, 0) || ve < di) {
             $("#errNgayVe1").text("Ngày về phải hơn ngày đi, sau hiện tại");
             return false;
         } else {
@@ -231,9 +229,10 @@ $(document).ready(function(){
             return true;
         }
     }
+
     function checkKhach1() {
         var cus = $("#email1").val();
-        if(cus <= 0) {
+        if (cus <= 0) {
             $("#errHanhKhach1").text('Chuyến bay phải có hành khách');
             return false;
         } else if (cus > 10) {
@@ -245,11 +244,12 @@ $(document).ready(function(){
         }
 
     }
+
     function checkMaGiam1() {
         var ma = $("#maGiam1").val();
         var regex = /[A-Z]{2}[0-9]{3}/;
 
-        if(ma == "" ) {
+        if (ma == "") {
             $("#errMaGiam1").text("Không được để rỗng");
             return false;
         } else if (!regex.test(ma)) {
@@ -260,27 +260,27 @@ $(document).ready(function(){
             return true;
         }
     }
-    $("#tu1").blur(function(){
+    $("#tu1").blur(function() {
         checkTu1();
     });
 
-    $("#toi1").blur(function(){
+    $("#toi1").blur(function() {
         checkToi1();
     });
 
-    $("#ngayDi1").blur(function(){
+    $("#ngayDi1").blur(function() {
         ngayDi1();
     });
 
-    $("#ngay_ve1").blur(function(){
+    $("#ngay_ve1").blur(function() {
         ngayVe1();
     });
 
-    $("#email1").blur(function(){
+    $("#email1").blur(function() {
         checkKhach1();
     });
-        
-    $("#maGiam1").blur(function(){
+
+    $("#maGiam1").blur(function() {
         checkMaGiam1();
     });
 
@@ -294,9 +294,9 @@ $(document).ready(function(){
         }
     }
 
-    
+
     $("#timChuyenBtn1").click(function() {
-        if (checkToi1() && checkTu1() && ngayDi1() && ngayVe1() && checkKhach1() && checkMaGiam1() &&checkRadio1() ) {
+        if (checkToi1() && checkTu1() && ngayDi1() && ngayVe1() && checkKhach1() && checkMaGiam1() && checkRadio1()) {
             var radioCheck = $("input[name='checkViTri']:checked").val();
             var tu = $("#tu1").val();
             var toi = $("#toi1").val();
@@ -313,32 +313,30 @@ $(document).ready(function(){
         } else {
             alert("Vui lòng kiểm tra lại dữ liệu");
         }
-        
+
     });
 
-    
-        function checkTu() {
-            var tu = $("#tu").val();
-            if(tu == "") {
-                $("#errTu").text('Không bỏ trống Từ');
-                return false;
-            }
-            else {
-                $("#errTu").text('');
-                return true;
-            }
+
+    function checkTu() {
+        var tu = $("#tu").val();
+        if (tu == "") {
+            $("#errTu").text('Không bỏ trống Từ');
+            return false;
+        } else {
+            $("#errTu").text('');
+            return true;
         }
+    }
 
 
 
 
     function checkToi() {
         var toi = $("#toi").val();
-        if(toi == "") {
+        if (toi == "") {
             $("#errToi").text('Không bỏ trống Tới');
             return false;
-        }
-        else {
+        } else {
             $("#errToi").text('');
             return true;
         }
@@ -347,53 +345,54 @@ $(document).ready(function(){
     function ngayDi() {
         var datedi = $("#ngayDi").val();
         var dateve = $("#ngay_ve").val();
-        if(!datedi){
+        if (!datedi) {
             $("#errNgayDi").text("Không rỗng");
             return false;
         }
-    var di = new Date(datedi);
-    var ve = new Date(dateve);
-    var now = new Date();  // Lấy ngày hiện tại
-    
-    // Kiểm tra xem ngày đi có hợp lệ không
-    if (di > ve) {
-        $("#errNgayDi").text("Ngày đi không được lớn hơn ngày về");
-        return false;
-    } else if (di < now.setHours(0, 0, 0, 0)) { 
-        $("#errNgayDi").text("Ngày đi phải sau hoặc bằng ngày hiện tại");
-        return false;
-    } else {
-        $("#errNgayDi").text("");
-        return true;
-    }
+        var di = new Date(datedi);
+        var ve = new Date(dateve);
+        var now = new Date(); // Lấy ngày hiện tại
+
+        // Kiểm tra xem ngày đi có hợp lệ không
+        if (di > ve) {
+            $("#errNgayDi").text("Ngày đi không được lớn hơn ngày về");
+            return false;
+        } else if (di < now.setHours(0, 0, 0, 0)) {
+            $("#errNgayDi").text("Ngày đi phải sau hoặc bằng ngày hiện tại");
+            return false;
+        } else {
+            $("#errNgayDi").text("");
+            return true;
+        }
     }
 
     function ngayVe() {
         var datedi = $("#ngayDi").val();
         var dateve = $("#ngay_ve").val();
-        
-        if(!dateve){
+
+        if (!dateve) {
             $("#errNgayVe").text("Không rỗng");
             return false;
         }
         var di = new Date(datedi);
         var ve = new Date(dateve);
-        var now = new Date();  
+        var now = new Date();
 
-    if (di > ve) {
-        $("#errNgayVe").text("Ngày đi không được lớn hơn ngày về");
-        return false;
-    } else if (ve < now.setHours(0, 0, 0, 0) || ve < di ) { 
-        $("#errNgayVe").text("Ngày về phải hơn ngày đi, sau hiện tại");
-        return false;
-    } else {
-        $("#errNgayVe").text("");
-        return true;
+        if (di > ve) {
+            $("#errNgayVe").text("Ngày đi không được lớn hơn ngày về");
+            return false;
+        } else if (ve < now.setHours(0, 0, 0, 0) || ve < di) {
+            $("#errNgayVe").text("Ngày về phải hơn ngày đi, sau hiện tại");
+            return false;
+        } else {
+            $("#errNgayVe").text("");
+            return true;
+        }
     }
-    }
+
     function checkKhach() {
         var cus = $("#email").val();
-        if(cus <= 0) {
+        if (cus <= 0) {
             $("#errHanhKhach").text('Chuyến bay phải có hành khách');
             return false;
         } else if (cus > 10) {
@@ -405,11 +404,12 @@ $(document).ready(function(){
         }
 
     }
+
     function checkMaGiam() {
         var ma = $("#maGiam").val();
         var regex = /[A-Z]{2}[0-9]{3}/;
 
-        if(ma == "" ) {
+        if (ma == "") {
             $("#errMaGiam").text("Không được để rỗng");
             return false;
         } else if (!regex.test(ma)) {
@@ -420,27 +420,27 @@ $(document).ready(function(){
             return true;
         }
     }
-    $("#tu").blur(function(){
+    $("#tu").blur(function() {
         checkTu();
     });
 
-    $("#toi").blur(function(){
+    $("#toi").blur(function() {
         checkToi();
     });
 
-    $("#ngayDi").blur(function(){
+    $("#ngayDi").blur(function() {
         ngayDi();
     });
 
-    $("#ngay_ve").blur(function(){
+    $("#ngay_ve").blur(function() {
         ngayVe();
     });
 
-    $("#email").blur(function(){
+    $("#email").blur(function() {
         checkKhach();
     });
 
-    $("#maGiam").blur(function(){
+    $("#maGiam").blur(function() {
         checkMaGiam();
     });
 
@@ -475,120 +475,120 @@ $(document).ready(function(){
     });
 
 
-    
-function checkMa() {
-    var ma = $("#inputlg").val();
-    var maRegex = /^123[\w]*$/;
-    
-    if(ma == "") {
-        $('#errMa').text('Không được rỗng mã');
-        return false;
-    } else if (!maRegex.test(ma)) {
-        $('#errMa').text('Số 123 đứng đầu và kí tự');
-        return false;
-    } else {
-        $('#errMa').text('');
-        return true;
+
+    function checkMa() {
+        var ma = $("#inputlg").val();
+        var maRegex = /^123[\w]*$/;
+
+        if (ma == "") {
+            $('#errMa').text('Không được rỗng mã');
+            return false;
+        } else if (!maRegex.test(ma)) {
+            $('#errMa').text('Số 123 đứng đầu và kí tự');
+            return false;
+        } else {
+            $('#errMa').text('');
+            return true;
+        }
     }
-}
 
-function checkHo() {
-    var ten = $('#inputlg1').val();
-    var tenRegex = /^[A-Z][a-zA-Z]+( [A-Z][a-zA-Z]+)*$/;
+    function checkHo() {
+        var ten = $('#inputlg1').val();
+        var tenRegex = /^([A-Z][a-z]+\s+)*[A-Z][a-z]+$/;
 
-    if(ten == "") {
-        $('#errHo').text('Không được rỗng họ');
-        return false;
-    } else if (!tenRegex.test(ten)) {
-        $('#errHo').text('Tên bắt đầu bằng chữ hoa');
-        return false;
-    } else {
-        $('#errHo').text('');
-        return true;
+        if (ten == "") {
+            $('#errHo').text('Không được rỗng họ');
+            return false;
+        } else if (!tenRegex.test(ten)) {
+            $('#errHo').text('Tên bắt đầu bằng chữ hoa');
+            return false;
+        } else {
+            $('#errHo').text('');
+            return true;
+        }
     }
-}
 
 
-$("#inputlg").blur(function() {
-    checkMa();
-});
+    $("#inputlg").blur(function() {
+        checkMa();
+    });
 
-$("#inputlg1").blur(function() {
-    checkHo();
-});
+    $("#inputlg1").blur(function() {
+        checkHo();
+    });
 
 
-$("#checkLamThuTuc").click(function() {
-    if(checkMa() && checkHo()) {
-        var tu = $("#inputlg").val();
-        var toi = $("#inputlg1").val();
-    
-        var table = "<tr><td>" + tu +"</td><td>" + toi + "</td></tr>";
-        $("#myTable1").append(table);
-    } else {
-        alert("Vui lòng kiểm tra lại dữ liệu");
+    $("#checkLamThuTuc").click(function() {
+        if (checkMa() && checkHo()) {
+            var tu = $("#inputlg").val();
+            var toi = $("#inputlg1").val();
+
+            var table = "<tr><td>" + tu + "</td><td>" + toi + "</td></tr>";
+            $("#myTable1").append(table);
+        } else {
+            alert("Vui lòng kiểm tra lại dữ liệu");
+        }
+    });
+
+
+
+
+    function checkMa1() {
+        var ma = $("#inputlg3").val();
+        var maRegex = /^123[\w]*$/;
+
+        if (ma == "") {
+            $('#errMa1').text('Không được rỗng mã');
+            return false;
+        } else if (!maRegex.test(ma)) {
+            $('#errMa1').text('Số 123 đứng đầu và kí tự');
+            return false;
+        } else {
+            $('#errMa1').text('');
+            return true;
+        }
     }
-});
 
+    function checkHo1() {
+        var ten = $('#inputlg4').val();
+        var tenRegex = /^([A-Z][a-z]+\s+)*[A-Z][a-z]+$/;
 
-
-
-function checkMa1() {
-    var ma = $("#inputlg3").val();
-    var maRegex = /^123[\w]*$/;
-    
-    if(ma == "") {
-        $('#errMa1').text('Không được rỗng mã');
-        return false;
-    } else if (!maRegex.test(ma)) {
-        $('#errMa1').text('Số 123 đứng đầu và kí tự');
-        return false;
-    } else {
-        $('#errMa1').text('');
-        return true;
+        if (ten == "") {
+            $('#errHo1').text('Không được rỗng họ');
+            return false;
+        } else if (!tenRegex.test(ten)) {
+            $('#errHo1').text('Tên bắt đầu bằng chữ hoa');
+            return false;
+        } else {
+            $('#errHo1').text('');
+            return true;
+        }
     }
-}
-
-function checkHo1() {
-    var ten = $('#inputlg4').val();
-    var tenRegex = /^[A-Z][a-zA-Z]+( [A-Z][a-zA-Z]+)*$/;
-
-    if(ten == "") {
-        $('#errHo1').text('Không được rỗng họ');
-        return false;
-    } else if (!tenRegex.test(ten)) {
-        $('#errHo1').text('Tên bắt đầu bằng chữ hoa');
-        return false;
-    } else {
-        $('#errHo1').text('');
-        return true;
-    }
-}
 
 
-$("#inputlg3").blur(function() {
-    checkMa1();
-});
+    $("#inputlg3").blur(function() {
+        checkMa1();
+    });
 
-$("#inputlg4").blur(function() {
-    checkHo1();
-});
+    $("#inputlg4").blur(function() {
+        checkHo1();
+    });
 
 
 
 
 
-$("#checkTimKiem").click(function() {
-    if(checkHo1() && checkHo1()) {
-        var tu = $("#inputlg3").val();
-        var toi = $("#inputlg4").val();
-    
-        var table = "<tr><td>" + tu +"</td><td>" + toi + "</td></tr>";
-        $("#myTable2").append(table);
-    } else {
-        alert("Vui lòng kiểm tra lại dữ liệu");
-    }
-});
+    $("#checkTimKiem").click(function() {
+        if (checkHo1() && checkHo1()) {
+            var tu = $("#inputlg3").val();
+            var toi = $("#inputlg4").val();
+
+            var table = "<tr><td>" + tu + "</td><td>" + toi + "</td></tr>";
+            $("#myTable2").append(table);
+        } else {
+            alert("Vui lòng kiểm tra lại dữ liệu");
+        }
+    });
 
 
 
@@ -605,6 +605,6 @@ const myModal = new bootstrap.Modal(
 );
 
 
-$(document).ready(function(){
+$(document).ready(function() {
 
 });
